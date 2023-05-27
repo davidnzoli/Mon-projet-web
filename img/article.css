@@ -1,0 +1,83 @@
+.div_an{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    margin: 50px;
+    transition: transform, background-color;
+    transition-delay: 1s;
+    transition-duration: 3s;
+   
+}
+#en1{
+    margin: 10px 0px;
+    background-color: red;
+}
+.entete{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_an:hover{
+    transform: rotate(360deg) scale(0);
+    background-color: red;
+}
+.menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1000;
+}
+.sousBoite{
+    width: 150px;
+    height: 200px;
+    display: none;
+    text-align: center;
+    padding-top: 10px;
+    background-color: wheat;
+}
+li .button{
+    font-size: 8px;
+    margin-left: 20px;
+    color: blue;
+}
+li{
+    margin-bottom: 10px;
+}
+.ajoutArticle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+}
+h1{
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 25px;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+.button{
+    width: 95px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    margin-left: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+input{
+    width: 200px;
+    height: 25px;
+    margin-left: 8px;
+    border-radius: 5px;
+    text-align: center;
+}

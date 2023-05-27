@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./article.css">
+    <title>New shopping</title>
+</head>
+<body>
+
+    <h1><span>Item</span><span>Is</span><span>our</span><span>primary</span><span>system</span><span>of stock</span></h1>
+    <h2>My shopping list</h2>
+    <div class=" ajoutArticle">
+        <label for="item">Enter a new item</label>
+        <input type="text" name="item" id="item" placeholder="User a item" autofocus="autofocus">
+        <button class="button">Add</button>
+    </div><br>
+    <p></p>
+    <ol></ol>
+
+    <div class="menu">
+        <button class="Active">Active</button>
+        <div class="sousBoite">
+                <p>Accuil</p>  
+                <p>Contact</p>  
+                <p>Apropos</p>  
+                <p>Nos service</p>   
+        </div>
+    </div><br>
+    <div class="div_an"></div><br><br>
+
+    <div class="entete" id="en1">3</div>
+    <div class="entete en2">4</div>
+    <script>
+        const liste = document.querySelector('ol');
+        const champ = document.querySelector('#item');
+        const button = document.querySelector('.button');
+        const para = document.querySelector('p');
+        const active = document.querySelector('.Active');
+
+        active.addEventListener('click', function(){
+            const sousBoite = document.querySelector('.sousBoite');
+            sousBoite.style.display ='block';
+        })
+        active.addEventListener('dblclick', function(){
+            const sousBoite = document.querySelector('.sousBoite');
+            sousBoite.style.display ='none';
+        })
+
+        button.addEventListener('click', function(){
+            let valeur=champ.value;
+             let vide = champ.value = '';
+
+            let creationLi = document.createElement('li');
+
+            let creationspan = document.createElement('span');
+            let textSpan = document.createTextNode(valeur);
+            creationspan.appendChild(textSpan);
+            creationspan.style.paddingRight='50px';
+
+            let creationbtn = document.createElement('button');
+            let textbtn = document.createTextNode("Delete");
+            creationbtn.style.color='white';
+            creationbtn.style.background='Red';
+            creationbtn.style.marginLeft='100px';
+            creationbtn.style.fontSize='15px';
+            creationbtn.appendChild(textbtn);
+
+            creationLi.appendChild(creationspan);
+            creationLi.appendChild(creationbtn);
+
+            liste.appendChild(creationLi);
+
+            creationbtn.addEventListener('click', function(){
+                creationLi.parentNode.removeChild(creationLi);
+                para.textContent='you delete a item with Succes!';
+                para.setAttribute('class', 'paragraphe');
+
+            })
+        });  
+
+       
+    </script>
+</body>
+</html>

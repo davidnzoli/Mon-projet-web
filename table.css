@@ -1,0 +1,122 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.table>table{
+    width:95%;
+    border: 3px solid red;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 20px;
+    margin-left:30px;
+}
+.form{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.form tr>td {
+    color: rgb(150, 149, 149);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px;
+}
+.form tr>td  input:last-child{
+    height: 25px;
+    margin-top:2px;
+    margin-right:3px;
+}
+.form tr>td input{
+    border: 2px solid rgb(216, 214, 214);
+}
+.en-tete{
+    width: 95%;
+    height:850px;
+    padding-top: 45px;
+    background-color: white;
+    margin-left:30px;
+    border-radius: 3px;
+    border-bottom:1px solid rgb(150, 149, 149);
+}
+
+th{
+    border-bottom: 2px solid rgb(241, 237, 237);
+    padding: 10px 0px;
+}
+.table table tr>td{
+    border-top: 2px solid  rgb(241, 237, 237);
+    padding: 30px 10px;
+}
+th:nth-child(1){
+    border-right: 2px solid  rgb(241, 237, 237);
+    width: 5%;
+}
+th:nth-child(2){
+    border-right: 2px solid  rgb(241, 237, 237);
+    width: 25%;
+}
+th:nth-child(3){
+    border-right: 2px solid  rgb(241, 237, 237);
+    width: 55%;
+}
+th:nth-child(4){
+    border-left: 2px solid  rgb(241, 237, 237);
+    width: 10%;
+}
+.table table tr>td:nth-child(1){
+    border-right:2px solid  rgb(241, 237, 237);
+}
+.table table tr>td:nth-child(2){
+    border-right:2px solid  rgb(241, 237, 237);
+}
+.table table tr>td:nth-child(4){
+    border-right:2px solid  rgb(241, 237, 237);
+}
+.table table tr>td:nth-child(4){
+    border-left:2px solid  rgb(241, 237, 237);
+}
+td>img{
+    width: 20px;
+    height: 20px;
+}
+th>img{
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+}
+.basPage{
+    text-align: center;
+    width: 99.1%;
+    padding:5px;
+    margin-top: 35px;
+    background-color: white;
+    border-top:2px solid rgb(150, 149, 149);
+}
+.basPage>p{
+    font-size:14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.basPage>p sup{
+    font-weight:normal;
+    font-family: 'Courier New', Courier, monospace;
+}
+.basPage p>span{
+    font-size:12px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: blue;
+    opacity: 0.3;
+    padding: 5px;
+}
+

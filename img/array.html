@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="array.css">
+    <style type="text/javascript" src="./array.js"></style>
+    <title>Array Tableau</title>
+</head>
+<body>
+    <di class="but"> <button>click</button></di>
+   
+    <div class="conteneur">
+        <table>
+            <thead>
+                <tr>
+                    <th>Flux</th>
+                    <th>Elements</th>
+                    <th>Agents</th>
+                    <th>Personnels</th>
+                    <th>Admin</th>
+                    <th>Total Agents</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>true</td>
+                    <td>Honorable</td>
+                    <td>Directeur</td>
+                    <td>Secretaire</td>
+                    <td>Admin</td>
+                    <td rowspan="4">255</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">2001</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>50</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>huissier</td>
+                    <td colspan="2">Quatres chaufeurs</td>
+                    <td rowspan="2">2003</td>
+                </tr>
+                <tr>
+                    <td>maman sofie</td>
+                    <td>Monsieur Jauseph</td>
+                    <td>Daniel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <!-- <input id="button" type="text">
+        <div class="div"></div> -->
+
+        <div id="cont">
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+            <div class="file"></div>
+        </div>
+    
+        <script>
+            // -----------------------COULEUR ALEATOIR----------------------------------------
+            function aleatoire(numero){
+                return Math.floor(Math.random()*numero);
+            }
+            function rempliCouleur(){
+                const remc= "rgb("+aleatoire(255)+", "+ aleatoire(255)+", "+ aleatoire(255);
+                return remc;
+            }
+            // --------------------------------TABLEAU-------------------------------------------------
+            const tr = document.querySelectorAll('tr');
+            for(let j=0; j<tr.length;j++){
+                tr[j].onclick = function(a){
+                    a.target.style.backgroundColor=rempliCouleur();
+                }
+            };
+            // -----------------------------DIV FILES------------------------------------------
+            const dvs = document.querySelectorAll('.file');
+            for(let i=0; i<dvs.length;i++){
+                     dvs[i].onclick = function (e){
+                        e.stopPropagation();
+                e.target.style.backgroundColor=rempliCouleur();
+                let styl=e.target.textContent ='Null';
+                }
+            //     const cont =document.querySelector('#cont');
+            // cont.addEventListener('click', function(o){
+            //     o.currentTarget.style.backgroundColor=rempliCouleur();
+            // })
+            };
+            const cont =document.querySelector('#cont');
+            cont.addEventListener('click', function(o){
+                
+                cont.style.backgroundColor=rempliCouleur();
+            })
+            // -------------------------------------BOUTON------------------------------------------------
+            const button = document.querySelector('button');
+            const conteneur = document.querySelector('.conteneur');
+
+            button.addEventListener('click', function(i){
+                conteneur.style.backgroundColor=rempliCouleur();
+                i.target.style.backgroundColor=rempliCouleur();
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.conteneur{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+}
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    border: 1px solid rgb(185, 184, 184);
+    text-align: center;
+    padding: 10px 5px;
+    color: rgb(77, 73, 73);
+    font-size: 14px;
+}
+th:nth-child(even){
+    background-color: pink;
+}
+td:nth-child(6){
+    background-color: gray;
+    opacity: 0.3;
+    color: pink;
+    font-size: 18px;
+    font-weight: 700;
+}
+#cont{
+    width: 500px;
+    height:400px;
+    background-color:red;
+}
+.file{
+    width: 100px;
+    height:100px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
